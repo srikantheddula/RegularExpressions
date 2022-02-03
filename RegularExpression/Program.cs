@@ -11,6 +11,7 @@ namespace RegularExpression
             regularExpression.ValidateFirstName("Srikanth"); //calling the function
             regularExpression.ValidateLastName("Eddula");
             regularExpression.ValidateEmailAddress("srikanth@gmail.com");
+            regularExpression.ValidateMobileNum("+91  2545624545");
         }
     }
 }
