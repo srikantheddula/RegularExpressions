@@ -8,7 +8,8 @@ namespace RegularExpression
         {
             Console.WriteLine("Welcome to RegularExpression");
             RegularExpression regularExpression = new RegularExpression();// Creating object for a class
-            regularExpression.ValidateFirstName("srikanth"); //calling the function
+            regularExpression.ValidateFirstName("Srikanth"); //calling the function
+            regularExpression.ValidateLastName("Eddula");
         }
     }
 }

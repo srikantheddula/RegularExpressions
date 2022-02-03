@@ -19,6 +19,17 @@ namespace RegularExpression
                 Console.WriteLine("{0} is not valid", firstName);
             }
         }
+        public void ValidateLastName(string firstName) // this method is used for validating last name
+        {
+            if (Regex.IsMatch(firstName, FirstName))
+            {
+                Console.WriteLine("{0} is valid", firstName);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", firstName);
+            }
+        }
     }
 }
 
