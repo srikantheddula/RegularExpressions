@@ -7,10 +7,11 @@ namespace RegularExpression
 {
     class RegularExpression
     {
-        public static string FirstName = "^[A-Z][A-Z a-z]{3,}$";
-        public static string EmailAddress =@"^([A-Za-z0-9]*\.[A-Za-z0-9]*)@([A-Za-z0-9]*)((\.(\w){2,3})+)$";
-        public static string MobileNum = @"^([\+][0-9]{2}\s*[0-9]{10})$";
-        public static string Password = @"\w{8,}$";
+        public  string FirstName = "^[A-Z][A-Z a-z]{3,}$";
+        public  string EmailAddress =@"^([A-Za-z0-9]*\.[A-Za-z0-9]*)@([A-Za-z0-9]*)((\.(\w){2,3})+)$";
+        public  string MobileNum = @"^([\+][0-9]{2}\s*[0-9]{10})$";
+        public string Password = @"^[\w]{8,}$";
+        public  string PasswordUpperCase = @"^([A-Z]?)[\w]{8,}$";
         public void ValidateFirstName(string firstName) // this method is used for validating first name
         {
             if (Regex.IsMatch(firstName, FirstName))
@@ -58,6 +59,18 @@ namespace RegularExpression
         public void ValidatePassWord(string password) // this method used for the validating mobile number
         {
             if (Regex.IsMatch(password, Password))
+            {
+                Console.WriteLine("{0} is valid", password);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", password);
+            }
+
+        }
+        public void ValidatePassWordUppercase(string password) // this method used for the validating mobile number
+        {
+            if (Regex.IsMatch(password, PasswordUpperCase))
             {
                 Console.WriteLine("{0} is valid", password);
             }

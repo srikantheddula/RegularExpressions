@@ -12,7 +12,9 @@ namespace RegularExpression
             regularExpression.ValidateLastName("Eddula");
             regularExpression.ValidateEmailAddress("xyz@bl.com");
             regularExpression.ValidateMobileNum("+91 2545624545");
-            regularExpression.ValidatePassWord("ssssss");
+            regularExpression.ValidatePassWord("srikanth");
+            regularExpression.ValidatePassWordUppercase("Srikanth");
+
         }
     }
 }
